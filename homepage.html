@@ -1,0 +1,13 @@
+
+<h3>All Contacts</h3>
+<div id="newContact">
+    <input type="text" id="name" placeholder="Enter Name" ng-model="name">
+    <input type="text" id="email" placeholder="Email" ng-model="email">
+    <input type="number" id="phone" placeholder="Phone Number" ng-model="phone">
+    <button id="inputbtn" ng-click="addContact()">Submit</button>
+</div>
+<div id="contactsContainer">
+    <ul id="contactsList" ng-repeat="contact in contacts">
+        <li id="listItem"><button id="detailbtn" ng-click="singleContact(contact.name)">Detail</button>Name:{{ contact.name }}, Email:{{ contact.email }}, Phone Number:{{ contact.phone }}</li>
+    </ul>
+</div>
