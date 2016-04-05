@@ -13,15 +13,15 @@ app.controller("HomeController", ["$scope", "$location", "$routeParams", "Contac
     }
     
     $scope.singleContact = function(name) {
-        console.log(name);
         $location.path("single/" + name);
         
     }
 }]);
 
-app.controller("SingleContactController", ["$scope", "$location", "$routeParams", function($scope, $location, $routeParams) {
+app.controller("SingleContactController", ["$scope", "$location", "$routeParams", "ContactFactory", function($scope, $location, $routeParams, ContactFactory) {
     $scope.name = $routeParams.param;
-    console.log("inside single view");
+    $scope.singlecontact = ContactFactory.singleContact($scope.name);
+    console.log($scope.singlecontact);
     
 }]);
 

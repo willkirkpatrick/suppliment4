@@ -1,0 +1,39 @@
+
+#newContact {
+            width:95%;
+            height:5em;
+            border:.25em solid grey;
+            border-radius: 1em;
+            background-color:red;
+            text-align:center;
+            position:relative;
+            display: inline-block;
+}
+
+#inputcontainer {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+        
+        
+}
+
+#contactsContainer {
+            width: 95%;
+            height: auto;
+            background-color: aquamarine;
+            border: .25em solid blue;
+            border-radius: 1em;
+}
+
+#singleView {
+            text-align: left;
+            padding-left: 3em;
+            height: 6em;
+            width: auto;
+            background-color:lightgreen;
+            border: .5em solid orange;
+            border-radius: 1em;
+}
